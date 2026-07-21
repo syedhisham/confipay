@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* ConFiPay design tokens ---------------------------------------------------- */
+:root {
+  --background: #f6f7f9;
+  --foreground: #0e1420;
+
+  --card: #ffffff;
+  --card-foreground: #0e1420;
+
+  --muted: #eef1f5;
+  --muted-foreground: #64748b;
+
+  --border: #e3e8ef;
+  --input: #ffffff;
+  --ring: #2563eb;
+
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+
+  --accent: #eff4ff;
+  --accent-foreground: #1d4ed8;
+
+  --success: #059669;
+  --success-bg: #ecfdf5;
+  --warning: #b45309;
+  --warning-bg: #fffbeb;
+  --danger: #dc2626;
+  --danger-bg: #fef2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0e17;
+    --foreground: #e6eaf2;
+
+    --card: #111826;
+    --card-foreground: #e6eaf2;
+
+    --muted: #172033;
+    --muted-foreground: #94a3b8;
+
+    --border: #1f2a3d;
+    --input: #131b2b;
+    --ring: #3b82f6;
+
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+
+    --accent: #16233c;
+    --accent-foreground: #93c5fd;
+
+    --success: #34d399;
+    --success-bg: #0b2a22;
+    --warning: #fbbf24;
+    --warning-bg: #2a2110;
+    --danger: #f87171;
+    --danger-bg: #2a1414;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-danger: var(--danger);
+  --color-danger-bg: var(--danger-bg);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
