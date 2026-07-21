@@ -28,7 +28,7 @@ frontend/                    Next.js 16 (App Router, Tailwind v4)
 
 ## Getting started
 
-**1. Backend** (http://localhost:4000)
+**1. Backend** (http://localhost:5000)
 
 ```bash
 cd backend
